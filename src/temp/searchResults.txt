@@ -1,34 +1,20 @@
-title: Inizio Internet Media s.r.o.,
-description: Popis firmy. Vytváříme moderní a uživatelsky přívětivé webové prezentace a e-shopy, kterým pomáháme vydělávat. Pomáháme zvyšovat návštěvnost díky ...,
-url: https://www.inizio.cz/,
+title: GitHub,
+description: GitHub is a developer platform that allows developers to create, store, manage and share their code. It uses Git software, providing the distributed version ...,
+url: https://github.com/,
 is_sponsored: false,
-high_res: https://api.faviconkit.com/www.inizio.cz/192,
-low_res: https://www.google.com/s2/favicons?sz=64&domain_url=www.inizio.cz
+high_res: https://api.faviconkit.com/github.com/192,
+low_res: https://www.google.com/s2/favicons?sz=64&domain_url=github.com
 
-title: INIZIO Internet Media (České Budějovice 7),
-description: Představujeme vám vedoucího našeho marketingové oddělení, Petra Svobodu. Neustále usměvavý a vstřícný vedoucí, díky kterému vše funguje tak, jak má.,
-url: https://www.firmy.cz/detail/12890575-inizio-internet-media-ceske-budejovice-7.html,
+title: GitHub,
+description: GitHub je webová služba podporující vývoj softwaru za pomoci verzovacího nástroje Git. GitHub nabízí bezplatný Webhosting pro ...,
+url: https://en.wikipedia.org/wiki/GitHub,
 is_sponsored: false,
-high_res: https://api.faviconkit.com/www.firmy.cz/192,
-low_res: https://www.google.com/s2/favicons?sz=64&domain_url=www.firmy.cz
+high_res: https://api.faviconkit.com/en.wikipedia.org/192,
+low_res: https://www.google.com/s2/favicons?sz=64&domain_url=en.wikipedia.org
 
-title: Inizio Internet Media (@iniziocz),
-description: Inizio Internet Media s.r.o. ... sledující (3,4 tis.) INIZIO je spolehlivá agentura specializující se na internetový marketing, webový design a tvorbu webových ...,
-url: https://www.instagram.com/iniziocz/,
+title: GitHub,
+description: GitHub je webová služba podporující vývoj softwaru za pomoci verzovacího nástroje Git. GitHub nabízí bezplatný Webhosting pro ...,
+url: https://cs.wikipedia.org/wiki/GitHub,
 is_sponsored: false,
-high_res: https://api.faviconkit.com/www.instagram.com/192,
-low_res: https://www.google.com/s2/favicons?sz=64&domain_url=www.instagram.com
-
-title: Inizio Internet Media s.r.o.,
-description: Firma nezveřejňuje účetní uzávěrky. Naposledy zveřejnila za rok 2019 s tím, že jejich výdaje na mzdy zaměstnanců za rok 2019 byly 1 354 000 Kč..,
-url: https://m.facebook.com/iniziomedia/,
-is_sponsored: false,
-high_res: https://api.faviconkit.com/m.facebook.com/192,
-low_res: https://www.google.com/s2/favicons?sz=64&domain_url=m.facebook.com
-
-title: Inizio Academy - zkušenosti?,
-description: začít: Začni něco dělat. Inizia a fare qualcosa!,
-url: https://webtrh.cz/diskuse/inizio-academy-zkusenosti/strana/3/,
-is_sponsored: false,
-high_res: https://api.faviconkit.com/webtrh.cz/192,
-low_res: https://www.google.com/s2/favicons?sz=64&domain_url=webtrh.cz
+high_res: https://api.faviconkit.com/cs.wikipedia.org/192,
+low_res: https://www.google.com/s2/favicons?sz=64&domain_url=cs.wikipedia.org

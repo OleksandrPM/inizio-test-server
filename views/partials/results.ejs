@@ -1,28 +1,32 @@
 <section class="results">
-  <%if (locals.emptyInputMsg) {%>
-  <p><%= emptyInputMsg %></p>
-  <%} %> <%if (locals.noResultsMsg) {%>
-  <p><%= noResultsMsg %></p>
-  <%} %> <%if (locals.errorMsg) {%>
-  <p><%= errorMsg %></p>
-  <%} %> <%if (locals.results) {%>
-  <h3>Výsledky hledání</h3>
-  <ol>
-    <% results.forEach(result => { const {title,description,url,is_sponsored,
-    favicons:{high_res, low_res}} = result;%>
-    <li>
-      <p>Title: <%= title%></p>
-      <p>Description: <%= description%></p>
-      <p>URL: <%= url%></p>
-      <p>Is sponsored: <%=is_sponsored%></p>
-      <p>Favicons:</p>
-      <p>high_res: <%= high_res%></p>
-      <p>low_res: <%= low_res%></p>
-    </li>
-    <% }); %>
-  </ol>
-  <form action="/download" method="get">
-    <button type="submit">Stáhnout soubor</button>
-  </form>
-  <% } %>
+  <div class="container px-4 py-3">
+    <%if (locals.emptyInputMsg) {%>
+    <p><%= emptyInputMsg %></p>
+    <%} %> <%if (locals.noResultsMsg) {%>
+    <p><%= noResultsMsg %></p>
+    <%} %> <%if (locals.errorMsg) {%>
+    <p><%= errorMsg %></p>
+    <%} %> <%if (locals.results) {%>
+    <h3 class="text-center">Výsledky vyhledávání</h3>
+    <ol>
+      <% results.forEach(result => { const {title,description,url,is_sponsored,
+      favicons:{high_res, low_res}} = result;%>
+      <li>
+        <p><span class="fw-bold">Title:</span> <%= title%></p>
+        <p><span class="fw-bold">Description:</span> <%= description%></p>
+        <p><span class="fw-bold">URL:</span> <%= url%></p>
+        <p><span class="fw-bold">Is sponsored:</span> <%=is_sponsored%></p>
+        <p class="fw-bold">Favicons:</p>
+        <p><span class="fw-bold">high_res:</span> <%= high_res%></p>
+        <p><span class="fw-bold">low_res:</span> <%= low_res%></p>
+      </li>
+      <% }); %>
+    </ol>
+    <form action="/download" method="get" class="text-center">
+      <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">
+        Stáhnout soubor
+      </button>
+    </form>
+    <% } %>
+  </div>
 </section>

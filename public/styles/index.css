@@ -1,3 +1,25 @@
 .head {
   background-color: #0093ee;
 }
+
+.footer {
+  background-color: #0093ee;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer a:active {
+  color: white;
+}
+
+@media (hover: hover) {
+  .footer a:hover {
+    color: white;
+  }
+}
+
+.footer a:focus-visible {
+  color: white;
+}

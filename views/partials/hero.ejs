@@ -1,14 +1,25 @@
 <section class="hero">
-  <h1>Praktický test od INIZIO</h1>
-  <form id="search-form" method="post" action="/">
-    <label for="search">Vyhledávání pomocí Google</label>
-    <input
-      type="search"
-      id="search"
-      name="search"
-      placeholder="Napiste, co hledate"
-      required
-    />
-    <button class="full-width" type="submit">Hledat</button>
-  </form>
+  <div class="container px-4 py-3 text-center">
+    <h1 class="display-5 fw-bold text-body-emphasis">
+      Praktický test od INIZIO
+    </h1>
+    <div class="col-lg-9 mx-auto">
+      <form class="w-100 me-3" id="search-form" method="post" action="/">
+        <label for="search" class="fw-bold text-body-emphasis"
+          >Vyhledávání pomocí Google</label
+        >
+        <input
+          class="form-control my-3"
+          type="search"
+          id="search"
+          name="search"
+          placeholder="Napiste, co hledate..."
+          required
+        />
+        <button class="btn btn-primary btn-lg px-4 gap-3" type="submit">
+          Hledat
+        </button>
+      </form>
+    </div>
+  </div>
 </section>
