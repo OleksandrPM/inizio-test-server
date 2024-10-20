@@ -1,0 +1,28 @@
+<section class="results">
+  <%if (locals.emptyInputMsg) {%>
+  <p><%= emptyInputMsg %></p>
+  <%} %> <%if (locals.noResultsMsg) {%>
+  <p><%= noResultsMsg %></p>
+  <%} %> <%if (locals.errorMsg) {%>
+  <p><%= errorMsg %></p>
+  <%} %> <%if (locals.results) {%>
+  <h3>Výsledky hledání</h3>
+  <ol>
+    <% results.forEach(result => { const {title,description,url,is_sponsored,
+    favicons:{high_res, low_res}} = result;%>
+    <li>
+      <p>Title: <%= title%></p>
+      <p>Description: <%= description%></p>
+      <p>URL: <%= url%></p>
+      <p>Is sponsored: <%=is_sponsored%></p>
+      <p>Favicons:</p>
+      <p>high_res: <%= high_res%></p>
+      <p>low_res: <%= low_res%></p>
+    </li>
+    <% }); %>
+  </ol>
+  <form action="/download" method="get">
+    <button type="submit">Stáhnout soubor</button>
+  </form>
+  <% } %>
+</section>
