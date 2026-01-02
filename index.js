@@ -1,9 +1,9 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import "dotenv/config";
 import { getSearchResults } from "./src/js/searchResults.js";
 import { createFile } from "./src/js/fileHandler.js";
-import { createResultsString } from "./src/js/objectParser.js";
 
 const app = express();
 const port = 3000;
@@ -26,14 +26,14 @@ app.post("/", async (req, res) => {
   if (searchString !== "") {
     const response = await getSearchResults(searchString);
 
-    if (response.results) {
-      if (response.results.length !== 0) {
+    if (response.items) {
+      if (response.items.length !== 0) {
         // TODO render of results
         res.render("index.ejs", {
-          results: response.results,
+          results: response.items,
         });
         //creating temp file with results
-        createFile(response.results);
+        createFile(response.items);
       } else {
         res.render("index.ejs", { noResultsMsg: noResultsMsg });
       }

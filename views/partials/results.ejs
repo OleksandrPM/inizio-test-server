@@ -9,16 +9,11 @@
     <%} %> <%if (locals.results) {%>
     <h3 class="text-center">Výsledky vyhledávání</h3>
     <ol>
-      <% results.forEach(result => { const {title,description,url,is_sponsored,
-      favicons:{high_res, low_res}} = result;%>
+      <% results.forEach(result => { const {title,snippet,link } = result;%>
       <li>
         <p><span class="fw-bold">Title:</span> <%= title%></p>
-        <p><span class="fw-bold">Description:</span> <%= description%></p>
-        <p><span class="fw-bold">URL:</span> <%= url%></p>
-        <p><span class="fw-bold">Is sponsored:</span> <%=is_sponsored%></p>
-        <p class="fw-bold">Favicons:</p>
-        <p><span class="fw-bold">high_res:</span> <%= high_res%></p>
-        <p><span class="fw-bold">low_res:</span> <%= low_res%></p>
+        <p><span class="fw-bold">Description:</span> <%= snippet%></p>
+        <p><span class="fw-bold">URL:</span> <%= link%></p>
       </li>
       <% }); %>
     </ol>
