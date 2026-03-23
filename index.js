@@ -4,9 +4,15 @@ import { fileURLToPath } from "url";
 import "dotenv/config";
 import { getSearchResults } from "./src/js/searchResults.js";
 import { createFile } from "./src/js/fileHandler.js";
+import rateLimit from "express-rate-limit";
 
 const app = express();
 const port = 3000;
+
+const downloadLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 download requests per windowMs
+});
 
 app.use(express.static("public"));
 app.use(express.static("src"));
@@ -49,7 +55,7 @@ const __filename = fileURLToPath(import.meta.url); // get the resolved path to t
 const __dirname = path.dirname(__filename); // get the name of the directory
 const folderPath = __dirname + "/src/temp";
 
-app.get("/download", (req, res) => {
+app.get("/download", downloadLimiter, (req, res) => {
   res.download(folderPath + "/searchResults.txt", function (err) {
     if (err) {
       console.log(err);
